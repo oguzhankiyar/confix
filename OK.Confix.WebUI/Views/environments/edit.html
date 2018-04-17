@@ -1,0 +1,19 @@
+﻿<div class="modal-header">
+    <h4>EDIT ENVIRONMENT</h4>
+</div>
+<div class="modal-body">
+    <div class="form-group">
+        <label for="application">Application</label>
+        <select id="application" class="form-control" ng-model="environment.applicationId">
+            <option ng-repeat="application in applications" ng-selected="application.id === environment.applicationId" value="{{application.id}}">{{application.name}}</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input id="name" class="form-control" ng-model="environment.name" />
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-danger pull-left" ng-click="cancel()">CANCEL</button>
+    <button type="button" class="btn btn-success" ng-click="save()">SAVE</button>
+</div>

@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OK.Confix", "OK.Confix\OK.Confix.csproj", "{29192B67-D2D1-4175-8C10-DD2EA6F53969}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OK.Confix.WebUI", "OK.Confix.WebUI\OK.Confix.WebUI.csproj", "{12C01ACE-41D0-4C12-AB55-D2275B3F0136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OK.Confix.SqlServer", "OK.Confix.SqlServer\OK.Confix.SqlServer.csproj", "{03EA5990-A154-4AFD-9AD4-DC83025A99F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{345ABE33-7627-4B3A-B624-9739854291A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OK.Confix.Samples.Mvc", "OK.Confix.Samples.Mvc\OK.Confix.Samples.Mvc.csproj", "{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OK.Confix.FileSystem", "OK.Confix.FileSystem\OK.Confix.FileSystem.csproj", "{F4FB65AD-B857-49FD-B6C2-04B0361E9312}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29192B67-D2D1-4175-8C10-DD2EA6F53969}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29192B67-D2D1-4175-8C10-DD2EA6F53969}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29192B67-D2D1-4175-8C10-DD2EA6F53969}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29192B67-D2D1-4175-8C10-DD2EA6F53969}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C01ACE-41D0-4C12-AB55-D2275B3F0136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C01ACE-41D0-4C12-AB55-D2275B3F0136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C01ACE-41D0-4C12-AB55-D2275B3F0136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C01ACE-41D0-4C12-AB55-D2275B3F0136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03EA5990-A154-4AFD-9AD4-DC83025A99F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03EA5990-A154-4AFD-9AD4-DC83025A99F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03EA5990-A154-4AFD-9AD4-DC83025A99F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03EA5990-A154-4AFD-9AD4-DC83025A99F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4FB65AD-B857-49FD-B6C2-04B0361E9312}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4FB65AD-B857-49FD-B6C2-04B0361E9312}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4FB65AD-B857-49FD-B6C2-04B0361E9312}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4FB65AD-B857-49FD-B6C2-04B0361E9312}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FFD3A9F-D866-4E82-A40E-E1AADF0112C0} = {345ABE33-7627-4B3A-B624-9739854291A8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {674DFAD0-0DE9-4061-9F74-4629F44A0E25}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://ogzkyr.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = OK.Confix.Samples.Mvc\\OK.Confix.Samples.Mvc.csproj
+		SccProjectTopLevelParentUniqueName1 = OK.Confix.sln
+		SccProjectName1 = OK.Confix.Samples.Mvc
+		SccLocalPath1 = OK.Confix.Samples.Mvc
+		SccProjectUniqueName2 = OK.Confix.SqlServer\\OK.Confix.SqlServer.csproj
+		SccProjectName2 = OK.Confix.SqlServer
+		SccLocalPath2 = OK.Confix.SqlServer
+		SccProjectUniqueName3 = OK.Confix.WebUI\\OK.Confix.WebUI.csproj
+		SccProjectName3 = OK.Confix.WebUI
+		SccLocalPath3 = OK.Confix.WebUI
+		SccProjectUniqueName4 = OK.Confix\\OK.Confix.csproj
+		SccProjectName4 = OK.Confix
+		SccLocalPath4 = OK.Confix
+		SccProjectUniqueName5 = OK.Confix.FileSystem\\OK.Confix.FileSystem.csproj
+		SccProjectName5 = OK.Confix.FileSystem
+		SccLocalPath5 = OK.Confix.FileSystem
+	EndGlobalSection
+EndGlobal
