@@ -1,0 +1,43 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Edit Configuration</h3>
+    </div>
+    <div class="panel-body">
+        <div class="form-group">
+            <label for="environment">Applicaion</label>
+            <select id="environment" class="form-control" ng-model="configuration.applicationId" ng-change="updateEnvironments()">
+                <option ng-repeat="application in applications" ng-selected="application.id === configuration.applicationId" value="{{application.id}}">{{application.name}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="environment">Environment</label>
+            <select id="environment" class="form-control" ng-model="configuration.environmentId">
+                <option ng-repeat="environment in environments" ng-selected="environment.id === configuration.environmentId" value="{{environment.id}}">{{environment.name}}</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" ng-model="configuration.name" />
+        </div>
+        <div class="form-group">
+            <label for="type">Type</label>
+            <select id="type" class="form-control" ng-model="configuration.type">
+                <option></option>
+                <option value="String">String</option>
+                <option value="Integer">Integer</option>
+                <option value="Decimal">Decimal</option>
+                <option value="Boolean">Boolean</option>
+                <option value="DateTime">DateTime</option>
+                <option value="Object">Object (JSON)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="name">Value</label>
+            <input id="name" class="form-control" ng-model="configuration.value" />
+        </div>
+    </div>
+    <div class="panel-footer">
+        <button type="button" class="btn btn-sm btn-danger" ng-click="cancel()">CANCEL</button>
+        <button type="button" class="btn btn-sm btn-success pull-right" ng-click="save()">SAVE</button>
+    </div>
+</div>

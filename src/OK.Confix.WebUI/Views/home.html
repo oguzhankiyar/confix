@@ -1,0 +1,97 @@
+﻿<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Applications</h3>
+        <span class="pull-right">
+            <a class="btn btn-xs btn-success" ng-href="#!/applications/create">NEW</a>
+        </span>
+    </div>
+    <div class="panel-body no-padding">
+        <table class="table table-hover goup">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="application in applications">
+                    <td ng-bind="application.id"></td>
+                    <td ng-bind="application.name"></td>
+                    <td style="text-align: right;">
+                        <a class="btn btn-xs btn-primary" ng-href="#!/applications/edit/{{application.id}}">EDIT</a>
+                        <a class="btn btn-xs btn-danger" ng-href="#!/applications/delete/{{application.id}}">DELETE</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Environments</h3>
+        <span class="pull-right">
+            <a class="btn btn-xs btn-success" ng-href="#!/environments/create">NEW</a>
+        </span>
+    </div>
+    <div class="panel-body no-padding">
+        <table class="table table-hover goup">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Application</th>
+                    <th>Name</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="environment in environments">
+                    <td ng-bind="environment.id"></td>
+                    <td ng-bind="environment.application.name"></td>
+                    <td ng-bind="environment.name"></td>
+                    <td style="text-align: right;">
+                        <a class="btn btn-xs btn-primary" ng-href="#!/environments/edit/{{environment.id}}">EDIT</a>
+                        <a class="btn btn-xs btn-danger" ng-href="#!/environments/delete/{{environment.id}}">DELETE</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Configurations</h3>
+        <span class="pull-right">
+            <a class="btn btn-xs btn-success" ng-href="#!/configurations/create">NEW</a>
+        </span>
+    </div>
+    <div class="panel-body no-padding">
+        <table class="table table-hover goup">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Application</th>
+                    <th>Environment</th>
+                    <th>Name</th>
+                    <th>Value</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="configuration in configurations">
+                    <td ng-bind="configuration.id"></td>
+                    <td ng-bind="configuration.application.name"></td>
+                    <td ng-bind="configuration.environment.name"></td>
+                    <td ng-bind="configuration.name"></td>
+                    <td ng-bind="configuration.value | limitTo:25:0" title="{{configuration.value}}"></td>
+                    <td style="text-align: right;">
+                        <a class="btn btn-xs btn-primary" ng-href="#!/configurations/edit/{{configuration.id}}">EDIT</a>
+                        <a class="btn btn-xs btn-danger" ng-href="#!/configurations/delete/{{configuration.id}}">DELETE</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

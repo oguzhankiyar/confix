@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\OK.Confix.FileSystem\OK.Confix.FileSystem.csproj" />
+    <ProjectReference Include="..\..\src\OK.Confix.SqlServer\OK.Confix.SqlServer.csproj" />
+    <ProjectReference Include="..\..\src\OK.Confix.WebUI\OK.Confix.WebUI.csproj" />
+    <ProjectReference Include="..\..\src\OK.Confix\OK.Confix.csproj" />
+  </ItemGroup>
+
+</Project>

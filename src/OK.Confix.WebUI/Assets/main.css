@@ -1,0 +1,39 @@
+﻿body {
+    background-color: #e5e5e5;
+    color: #363636;
+}
+
+.container {
+    margin: 25px auto;
+    width: 1000px;
+}
+
+.panel {
+    box-shadow: #888888 0 0 7.5px;
+}
+
+.panel-title {
+    font-weight: bold;
+}
+
+.panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+}
+
+.panel-body.no-padding {
+    padding: 0;
+}
+
+.panel-body > .table > thead > tr > th {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.panel-body > .table > tbody > tr > td {
+    border-right: 0;
+}
+
+.panel-body > .table {
+    margin-bottom: 0px;
+}

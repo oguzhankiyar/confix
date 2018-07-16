@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\angular-route.js" />
+    <None Remove="Assets\angular.js" />
+    <None Remove="Assets\app.js" />
+    <None Remove="Assets\bootstrap.css" />
+    <None Remove="Assets\bootstrap.js" />
+    <None Remove="Assets\jquery.js" />
+    <None Remove="Assets\main.css" />
+    <None Remove="Assets\main.js" />
+    <None Remove="Views\applications\create.html" />
+    <None Remove="Views\applications\delete.html" />
+    <None Remove="Views\applications\edit.html" />
+    <None Remove="Views\configurations\create.html" />
+    <None Remove="Views\configurations\delete.html" />
+    <None Remove="Views\configurations\edit.html" />
+    <None Remove="Views\environments\create.html" />
+    <None Remove="Views\environments\delete.html" />
+    <None Remove="Views\environments\edit.html" />
+    <None Remove="Views\home.html" />
+    <None Remove="Views\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\angular-route.js" />
+    <EmbeddedResource Include="Assets\angular.js" />
+    <EmbeddedResource Include="Assets\app.js" />
+    <EmbeddedResource Include="Assets\bootstrap.css" />
+    <EmbeddedResource Include="Assets\bootstrap.js" />
+    <EmbeddedResource Include="Assets\jquery.js" />
+    <EmbeddedResource Include="Assets\main.css" />
+    <EmbeddedResource Include="Assets\main.js" />
+    <EmbeddedResource Include="Views\applications\create.html" />
+    <EmbeddedResource Include="Views\applications\delete.html" />
+    <EmbeddedResource Include="Views\applications\edit.html" />
+    <EmbeddedResource Include="Views\configurations\create.html" />
+    <EmbeddedResource Include="Views\configurations\delete.html" />
+    <EmbeddedResource Include="Views\configurations\edit.html" />
+    <EmbeddedResource Include="Views\environments\create.html" />
+    <EmbeddedResource Include="Views\environments\delete.html" />
+    <EmbeddedResource Include="Views\environments\edit.html" />
+    <EmbeddedResource Include="Views\home.html" />
+    <EmbeddedResource Include="Views\index.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OK.Confix\OK.Confix.csproj" />
+  </ItemGroup>
+
+</Project>
