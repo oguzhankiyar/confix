@@ -73,5 +73,5 @@ confix.Set("AppName", "The App");
 Get Value
 
 ```c#
-string appName = confix.Get<string>("The App");
+string appName = confix.Get<string>("AppName");
 ```
